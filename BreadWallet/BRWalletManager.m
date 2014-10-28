@@ -666,8 +666,7 @@ completion:(void (^)(BRTransaction *tx, NSError *error))completion
 
         if (standardFee + TX_MIN_OUTPUT_AMOUNT > balance) {
             completion(nil, [NSError errorWithDomain:@"BreadWallet" code:417 userInfo:@{NSLocalizedDescriptionKey:
-                             NSLocalizedString(@"transaction fees would cost more than the funds available on this "
-                                               "private key (due to tiny \"dust\" deposits)",nil)}]);
+                             NSLocalizedString(@"transaction fees would cost more than the funds available on this private key (due to tiny \"dust\" deposits)",nil)}]);
             return;
         }
 

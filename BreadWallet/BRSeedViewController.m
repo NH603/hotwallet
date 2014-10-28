@@ -142,15 +142,13 @@
             object:nil queue:nil usingBlock:^(NSNotification *note) {
                 if ([[[BRWalletManager sharedInstance] wallet] balance] == 0) {
                     [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"WARNING", nil)
-                      message:NSLocalizedString(@"Screenshots are visible to other apps and devices. "
-                                                "Generate a new backup phrase and keep it secret.", nil)
+                      message:NSLocalizedString(@"Screenshots are visible to other apps and devices. Generate a new backup phrase and keep it secret.", nil)
                       delegate:self cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"new phrase", nil), nil]
                      show];
                 }
                 else {
                     [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"WARNING", nil)
-                      message:NSLocalizedString(@"Screenshots are visible to other apps and devices. "
-                                                "Your funds are at risk. Transfer your balance to another wallet.", nil)
+                      message:NSLocalizedString(@"Screenshots are visible to other apps and devices. Your funds are at risk. Transfer your balance to another wallet.", nil)
                       delegate:nil cancelButtonTitle:NSLocalizedString(@"ok", nil) otherButtonTitles:nil] show];
                 }
             }];

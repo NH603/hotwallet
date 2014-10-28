@@ -195,8 +195,7 @@
 {
     if (! [[BRWalletManager sharedInstance] isPasscodeEnabled]) {
         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"turn device passcode on", nil)
-          message:NSLocalizedString(@"\nA device passcode is needed to safeguard your wallet. Go to settings and turn "
-                                    "passcode on to continue.", nil)
+          message:NSLocalizedString(@"\nA device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue.", nil)
           delegate:nil cancelButtonTitle:NSLocalizedString(@"ok", nil) otherButtonTitles:nil] show];
         return;
     }

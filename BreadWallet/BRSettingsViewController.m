@@ -555,12 +555,10 @@
             return nil;
 
         case 3:
-            return NSLocalizedString(@"rescan blockchain if you think you may have missing transactions, "
-                                     "or are having trouble sending (rescanning can take several minutes)", nil);
+            return NSLocalizedString(@"rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescanning can take several minutes)", nil);
 
         case 4:
-            return NSLocalizedString(@"bitcoin network fees are only optional for high priority transactions "
-                                     "(removal may cause delays)", nil);
+            return NSLocalizedString(@"bitcoin network fees are only optional for high priority transactions (removal may cause delays)", nil);
 
         default:
             NSAssert(FALSE, @"%s:%d %s: unkown section %d", __FILE__, __LINE__,  __func__, (int)section);
@@ -713,10 +711,7 @@
                     
                 case 1: // backup phrase
                     [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"WARNING", nil)
-                      message:NSLocalizedString(@"\nDO NOT let anyone see your backup phrase or they can spend your "
-                                                "bitcoins.\n\nDO NOT take a screenshot. Screenshots are visible to "
-                                                "other apps and devices.\n\nDO NOT type your backup phrase into "
-                                                "password managers or elsewhere. Other devices may be infected.\n",
+                      message:NSLocalizedString(@"\nDO NOT let anyone see your backup phrase or they can spend your bitcoins.\n\nDO NOT take a screenshot. Screenshots are visible to other apps and devices.\n\nDO NOT type your backup phrase into password managers or elsewhere. Other devices may be infected.\n",
                                                 nil) delegate:self
                       cancelButtonTitle:NSLocalizedString(@"cancel", nil)
                       otherButtonTitles:NSLocalizedString(@"show", nil), nil] show];

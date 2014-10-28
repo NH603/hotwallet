@@ -35,8 +35,7 @@
 #import <sys/stat.h>
 #import <mach-o/dyld.h>
 
-#define BALANCE_TIP NSLocalizedString(@"This is your bitcoin balance. Bitcoin is a currency. "\
-                                       "The exchange rate changes with the market.", nil)
+#define BALANCE_TIP NSLocalizedString(@"This is your bitcoin balance. Bitcoin is a currency. The exchange rate changes with the market.", nil)
 #define BITS_TIP    NSLocalizedString(@"%@ is for 'bits'. %@ = 1 bitcoin.", nil)
 
 #define BACKUP_DIALOG_TIME_KEY @"BACKUP_DIALOG_TIME"
@@ -143,18 +142,13 @@
 
             if (jailbroken && m.wallet.balance > 0) {
                 [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"WARNING", nil)
-                  message:NSLocalizedString(@"DEVICE SECURITY COMPROMISED\n"
-                                            "Any 'jailbreak' app can access any other app's keychain data "
-                                            "(and steal your bitcoins). "
-                                            "Wipe this wallet immediately and restore on a secure device.", nil)
+                  message:NSLocalizedString(@"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your bitcoins). Wipe this wallet immediately and restore on a secure device.", nil)
                  delegate:self cancelButtonTitle:NSLocalizedString(@"ignore", nil)
                  otherButtonTitles:NSLocalizedString(@"wipe", nil), nil] show];
             }
             else if (jailbroken) {
                 [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"WARNING", nil)
-                  message:NSLocalizedString(@"DEVICE SECURITY COMPROMISED\n"
-                                            "Any 'jailbreak' app can access any other app's keychain data "
-                                            "(and steal your bitcoins).", nil)
+                  message:NSLocalizedString(@"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your bitcoins).", nil)
                   delegate:self cancelButtonTitle:NSLocalizedString(@"ignore", nil)
                   otherButtonTitles:NSLocalizedString(@"close app", nil), nil] show];
             }
@@ -276,8 +270,7 @@
     if ([[UIApplication sharedApplication] isProtectedDataAvailable] && ! m.wallet) {
         if (m.masterPublicKey && ! m.passcodeEnabled) {
             [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"turn device passcode on", nil)
-              message:NSLocalizedString(@"\nA device passcode is needed to safeguard your wallet. Go to settings and "
-                                        "turn passcode on to continue.", nil)
+              message:NSLocalizedString(@"\nA device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue.", nil)
               delegate:self cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"close app", nil), nil] show];
               return;
         }
@@ -367,8 +360,7 @@
     
     if (sender == self) { // show backup phrase
         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"WARNING", nil)
-          message:NSLocalizedString(@"\nDO NOT let anyone see your backup phrase or they can spend your bitcoins.\n\n"
-                                    "DO NOT take a screenshot. Screenshots are visible to other apps and devices.\n",
+          message:NSLocalizedString(@"\nDO NOT let anyone see your backup phrase or they can spend your bitcoins.\n\nDO NOT take a screenshot. Screenshots are visible to other apps and devices.\n",
                                     nil) delegate:[[(id)segue.destinationViewController viewControllers] firstObject]
           cancelButtonTitle:NSLocalizedString(@"cancel", nil) otherButtonTitles:NSLocalizedString(@"show", nil), nil]
          show];
@@ -572,8 +564,7 @@
     [[[UIAlertView alloc]
       initWithTitle:(first) ? NSLocalizedString(@"you received bitcoin!", nil) : NSLocalizedString(@"IMPORTANT", nil)
       message:[NSString
-               stringWithFormat:NSLocalizedString(@"\n%@\n\nwrite down your backup phrase and use it to restore on "
-                                                  "another device if this one is ever lost or broken", nil),
+               stringWithFormat:NSLocalizedString(@"\n%@\n\nwrite down your backup phrase and use it to restore on another device if this one is ever lost or broken", nil),
                (first) ? NSLocalizedString(@"next, backup your wallet", nil) :
                NSLocalizedString(@"BACKUP YOUR WALLET", nil)] delegate:self
       cancelButtonTitle:NSLocalizedString(@"do it later", nil) otherButtonTitles:NSLocalizedString(@"backup", nil), nil]

@@ -40,10 +40,8 @@
 #import "NSMutableData+Bitcoin.h"
 #import "NSData+Hash.h"
 
-#define SCAN_TIP      NSLocalizedString(@"Scan someone else's QR code to get their bitcoin address. "\
-                                         "You can send a payment to anyone with an address.", nil)
-#define CLIPBOARD_TIP NSLocalizedString(@"Bitcoin addresses can also be copied to the clipboard. "\
-                                         "A bitcoin address always starts with '1' or '3'.", nil)
+#define SCAN_TIP      NSLocalizedString(@"Scan someone else's QR code to get their bitcoin address. You can send a payment to anyone with an address.", nil)
+#define CLIPBOARD_TIP NSLocalizedString(@"Bitcoin addresses can also be copied to the clipboard. A bitcoin address always starts with '1' or '3'.", nil)
 
 #define LOCK @"\xF0\x9F\x94\x92" // unicode lock symbol U+1F512 (utf-8)
 #define REDX @"\xE2\x9D\x8C"     // unicode cross mark U+274C, red x emoji (utf-8)
@@ -263,9 +261,7 @@ memo:(NSString *)memo isSecure:(BOOL)isSecure
         self.request = request;
         self.okAddress = request.paymentAddress;
         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"WARNING", nil)
-          message:NSLocalizedString(@"\nADDRESS ALREADY USED\n\nbitcoin addresses are intented for single use only\n\n"
-                                    "re-use reduces privacy for both you and the recipient and can result in loss if "
-                                    "the recipient doesn't directly control the address", nil)
+          message:NSLocalizedString(@"\nADDRESS ALREADY USED\n\nbitcoin addresses are intented for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address", nil)
           delegate:self cancelButtonTitle:nil
           otherButtonTitles:NSLocalizedString(@"ignore", nil), NSLocalizedString(@"cancel", nil), nil] show];
     }
@@ -298,9 +294,7 @@ memo:(NSString *)memo isSecure:(BOOL)isSecure
         if (self.tx && [m.wallet blockHeightUntilFree:self.tx] <= [[BRPeerManager sharedInstance] lastBlockHeight] +1 &&
             ! self.didAskFee && [[NSUserDefaults standardUserDefaults] boolForKey:SETTINGS_SKIP_FEE_KEY]) {
             [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"bitcoin network fee", nil)
-              message:[NSString stringWithFormat:NSLocalizedString(@"the standard bitcoin network fee for this "
-                                                                   "transaction is %@ (%@)\n\nremoving this fee may "
-                                                                   "delay confirmation", nil),
+              message:[NSString stringWithFormat:NSLocalizedString(@"the standard bitcoin network fee for this transaction is %@ (%@)\n\nremoving this fee may delay confirmation", nil),
                        [m stringForAmount:self.tx.standardFee], [m localCurrencyStringForAmount:self.tx.standardFee]]
               delegate:self cancelButtonTitle:nil
               otherButtonTitles:NSLocalizedString(@"remove fee", nil), NSLocalizedString(@"continue", nil), nil] show];
@@ -354,9 +348,7 @@ memo:(NSString *)memo isSecure:(BOOL)isSecure
         self.protocolRequest = protoReq;
         self.okAddress = address;
         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"WARNING", nil)
-          message:NSLocalizedString(@"\nADDRESS ALREADY USED\n\nbitcoin addresses are intented for single use only\n\n"
-                                    "re-use reduces privacy for both you and the recipient and can result in loss if "
-                                    "the recipient doesn't directly control the address", nil)
+          message:NSLocalizedString(@"\nADDRESS ALREADY USED\n\nbitcoin addresses are intented for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address", nil)
           delegate:self cancelButtonTitle:nil
           otherButtonTitles:NSLocalizedString(@"ignore", nil), NSLocalizedString(@"cancel", nil), nil] show];
     }
@@ -410,9 +402,7 @@ memo:(NSString *)memo isSecure:(BOOL)isSecure
         if (self.tx && [m.wallet blockHeightUntilFree:self.tx] <= [[BRPeerManager sharedInstance] lastBlockHeight] +1 &&
             ! self.didAskFee && [[NSUserDefaults standardUserDefaults] boolForKey:SETTINGS_SKIP_FEE_KEY]) {
             [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"bitcoin network fee", nil)
-              message:[NSString stringWithFormat:NSLocalizedString(@"the standard bitcoin network fee for this "
-                                                                   "transaction is %@ (%@)\n\nremoving this fee may "
-                                                                   "delay confirmation", nil),
+              message:[NSString stringWithFormat:NSLocalizedString(@"the standard bitcoin network fee for this transaction is %@ (%@)\n\nremoving this fee may delay confirmation", nil),
                        [m stringForAmount:self.tx.standardFee], [m localCurrencyStringForAmount:self.tx.standardFee]]
               delegate:self cancelButtonTitle:nil
               otherButtonTitles:NSLocalizedString(@"remove fee", nil), NSLocalizedString(@"continue", nil), nil] show];
@@ -486,8 +476,7 @@ memo:(NSString *)memo isSecure:(BOOL)isSecure
             self.sweepTx = tx;
 
             [[[UIAlertView alloc] initWithTitle:nil message:[NSString
-              stringWithFormat:NSLocalizedString(@"Send %@ (%@) from this private key into your wallet? "
-                                                 "The bitcoin network will receive a fee of %@ (%@).", nil),
+              stringWithFormat:NSLocalizedString(@"Send %@ (%@) from this private key into your wallet? The bitcoin network will receive a fee of %@ (%@).", nil),
               [m stringForAmount:amount], [m localCurrencyStringForAmount:amount], [m stringForAmount:fee],
               [m localCurrencyStringForAmount:fee]] delegate:self cancelButtonTitle:NSLocalizedString(@"cancel", nil)
               otherButtonTitles:[NSString stringWithFormat:@"%@ (%@)", [m stringForAmount:amount],

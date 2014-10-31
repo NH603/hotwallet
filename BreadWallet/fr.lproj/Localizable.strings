@@ -1,0 +1,424 @@
+/* No comment provided by engineer. */
+"\n%@\n\nwrite down your backup phrase and use it to restore on another device if this one is ever lost or broken" = "\n%@\n\nconservez votre phrase de backup, vous pourrez ainsi effectuer une restauration sur un autre appareil";
+
+/* No comment provided by engineer. */
+"\nA device passcode is needed to safeguard your wallet. Go to settings and turn passcode on to continue." = "\nVous devez activer un code confidentiel dans \"Réglages\" pour protéger votre porte-monnaie.";
+
+/* No comment provided by engineer. */
+"\nADDRESS ALREADY USED\n\nbitcoin addresses are intented for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADRESSE DÉJÀ UTLISÉE\n\nla réutilisation d'adresse est déconseillée\n\nelle réduit votre confidentialité et peut entraîner une perte de fonds si le destinataire ne contrôle pas l'adresse directement";
+
+
+/* No comment provided by engineer. */
+"\nbitcoin network fee + %@ (%@)" = "\ncommission bitcoin + %1$@ (%2$@)";
+
+/* No comment provided by engineer. */
+"\nDO NOT let anyone see your backup phrase or they can spend your bitcoins.\n\nDO NOT take a screenshot. Screenshots are visible to other apps and devices.\n\nDO NOT type your backup phrase into password managers or elsewhere. Other devices may be infected.\n" = "\nNe commiquez-pas votre phrase de backup, vos fonds seraient compromis.\n\nNe prenez pas de capture d'écran, ils sont visibles pas les autres applications.\n\nNe sauvegardez pas votre phrase de backup dans un gestionnaire de mots de passe.\n";
+
+/* No comment provided by engineer. */
+"\ngo to settings and turn passcode on to access restricted areas of your wallet" = "\nallez dans les réglages et activez un code confidentiel pour un accès complet";
+
+/* No comment provided by engineer. */
+" - included in block #%d" = " - inclus dans le block #%d";
+
+/* No comment provided by engineer. */
+"%@ from:%@" = "%1$@ de:%2$@";
+
+/* No comment provided by engineer. */
+"%@ is for 'bits'. %@ = 1 bitcoin." = "%1$@ représente 'bits'. %2$@ = 1 bitcoin.";
+
+/* No comment provided by engineer. */
+"%@ to:%@" = "%1$@ vers:%2$@";
+
+/* No comment provided by engineer. */
+"%d confirmations" = "%d confirmations";
+
+/* No comment provided by engineer. */
+"1 confirmation" = "1 confirmation";
+
+/* No comment provided by engineer. */
+"\"%@\" is not a backup phrase word" = "\"%@\" n'est pas un mot de phrase de backup";
+
+/* No comment provided by engineer. */
+"about" = "à propos";
+
+/* No comment provided by engineer. */
+"backup" = "backup";
+
+/* No comment provided by engineer. */
+"backup phrase" = "phrase de backup";
+
+/* No comment provided by engineer. */
+"backup phrase doesn't match" = "phrase de backup incorrecte";
+
+/* No comment provided by engineer. */
+"backup phrase must have %d words" = "la phrase de backup doit avoir %d mots";
+
+/* No comment provided by engineer. */
+"BACKUP YOUR WALLET" = "SAUVEGARDEZ VOTRE WALLET";
+
+/* No comment provided by engineer. */
+"bad backup phrase" = "mauvaise phrase de backup";
+
+/* No comment provided by engineer. */
+"bad payment request" = "mauvaise requête de paiement";
+
+/* No comment provided by engineer. */
+"bad payment request URL" = "mauvaise URL de requête de paiement";
+
+/* No comment provided by engineer. */
+"bad payment URL" = "mauvaise URL de paiement";
+
+/* No comment provided by engineer. */
+"bad signature" = "signature incorrecte";
+
+/* No comment provided by engineer. */
+"Bitcoin address" = "Adresse Bitcoin";
+
+/* No comment provided by engineer. */
+"Bitcoin addresses can also be copied to the clipboard. A bitcoin address always starts with '1' or '3'." = "Les adresses peuvent-être copiées dans le presse-papiers. Elles commencent toujours par '1' ou '3'.";
+
+
+/* No comment provided by engineer. */
+"bitcoin network fee" = "commission bitcoin";
+
+/* No comment provided by engineer. */
+"bitcoin network fees are only optional for high priority transactions (removal may cause delays)" = "la commission est optionnelle pour les transactions prioritaires uniquement, (sa suppression peut entraîner des délais)";
+
+/* No comment provided by engineer. */
+"bitcoin payments can't be less than %@" = "un paiement bitcoin doit-être au moins de %@";
+
+/* No comment provided by engineer. */
+"bitcoin transaction not signed" = "transaction bitcoin non signée";
+
+/* No comment provided by engineer. */
+"cancel" = "annuler";
+
+/* No comment provided by engineer. */
+"caution" = "attention";
+
+/* No comment provided by engineer. */
+"checking private key balance..." = "vérification du solde...";
+
+/* No comment provided by engineer. */
+"clipboard doesn't contain a valid bitcoin address" = "le presse-papiers ne contient pas d'adresse valide";
+
+/* No comment provided by engineer. */
+"close app" = "fermer l'app";
+
+/* No comment provided by engineer. */
+"confirm payment" = "confirmer le paiement";
+
+/* No comment provided by engineer. */
+"CONFIRM WIPE" = "CONFIRMER LA SUPPRESSION";
+
+/* No comment provided by engineer. */
+"confirmed in block #%d" = "confirmé dans le block #%d";
+
+/* No comment provided by engineer. */
+"connect timeout" = "délai de connexion dépassé";
+
+/* No comment provided by engineer. */
+"continue" = "continuer";
+
+/* No comment provided by engineer. */
+"copied" = "copiée";
+
+/* No comment provided by engineer. */
+"copy to clipboard" = "copier";
+
+/* No comment provided by engineer. */
+"couldn't make payment" = "impossible de créer le paiement";
+
+/* No comment provided by engineer. */
+"couldn't sweep balance" = "impossible de récupérer le solde";
+
+/* No comment provided by engineer. */
+"couldn't transmit payment to bitcoin network" = "impossible d'envoyer le paiement";
+
+/* No comment provided by engineer. */
+"day" = "jour";
+
+/* No comment provided by engineer. */
+"days" = "jours";
+
+/* No comment provided by engineer. */
+"delete" = "supprimer";
+
+/* No comment provided by engineer. */
+"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your bitcoins)." = "SÉCURITÉ COMPROMISE\nToutes les apps 'jailbreak' peuvent accéder à votre porte-monnaie.";
+
+/* No comment provided by engineer. */
+"DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your bitcoins). Wipe this wallet immediately and restore on a secure device." = "SÉCURITÉ COMPROMISE\nToutes les apps 'jailbreak' peuvent accéder à votre porte-monnaie. Supprimez le porte-monnaie immédiatement et restaurez-le sur un appareil sécurisé";
+
+/* No comment provided by engineer. */
+"do it later" = "le faire plus tard";
+
+/* No comment provided by engineer. */
+"done" = "fait";
+
+/* No comment provided by engineer. */
+"double spend" = "double spend";
+
+/* No comment provided by engineer. */
+"email not configured" = "email non configuré";
+
+/* No comment provided by engineer. */
+"turn device passcode on" = "activer code confidentiel";
+
+/* No comment provided by engineer. */
+"error signing bitcoin transaction" = "erreur de signature";
+
+/* No comment provided by engineer. */
+"error signing transaction" = "erreur de signature";
+
+/* No comment provided by engineer. */
+"from:" = "de:";
+
+/* No comment provided by engineer. */
+"hour" = "heure";
+
+/* No comment provided by engineer. */
+"hours" = "heures";
+
+/* No comment provided by engineer. */
+"id:" = "id:";
+
+/* No comment provided by engineer. */
+"ignore" = "ignorer";
+
+/* No comment provided by engineer. */
+"import private key" = "importer clé privée";
+
+/* No comment provided by engineer. */
+"insufficient funds" = "fonds insuffisants";
+
+/* No comment provided by engineer. */
+"IMPORTANT" = "IMPORTANT";
+
+/* No comment provided by engineer. */
+"INVALID" = "INVALIDE";
+
+/* No comment provided by engineer. */
+"Let others scan this QR code to get your bitcoin address. Anyone can send bitcoins to your wallet by transferring them to your address." = "Let others scan this QR code to get your bitcoin address. Anyone can send bitcoins to your wallet by transferring them to your address.";
+
+"Let others scan this QR code to get your bitcoin address. Anyone can send bitcoins to your wallet by transferring them to your address." = "Montrez ce code pour partager votre adresse. Des bitcoins peuvent-être envoyés vers votre porte-monnaie en les transférant à votre adresse.";
+
+
+/* No comment provided by engineer. */
+"local currency" = "devise locale";
+
+/* No comment provided by engineer. */
+"minute" = "minute";
+
+/* No comment provided by engineer. */
+"minutes" = "minutes";
+
+/* No comment provided by engineer. */
+"missing certificate" = "certificat manquant";
+
+/* No comment provided by engineer. */
+"more..." = "plus...";
+
+/* No comment provided by engineer. */
+"moved" = "déplacé";
+
+/* No comment provided by engineer. */
+"new phrase" = "nouvelle phrase";
+
+/* No comment provided by engineer. */
+"next, backup your wallet" = "ensuite, sauvegardez votre porte-monnaie";
+
+/* No comment provided by engineer. */
+"no peers found" = "aucun pair trouvé";
+
+/* No comment provided by engineer. */
+"not a bitcoin QR code" = "pas un QR code bitcoin";
+
+/* No comment provided by engineer. */
+"not a valid bitcoin address" = "pas une adresse valide";
+
+/* No comment provided by engineer. */
+"not a valid private key" = "pas une clé privée valide";
+
+/* No comment provided by engineer. */
+"not connected to the bitcoin network" = "pas connecté au réseau bitcoin";
+
+/* No comment provided by engineer. */
+"ok" = "ok";
+
+/* No comment provided by engineer. */
+"payment address" = "adresse de paiement";
+
+/* No comment provided by engineer. */
+"payment output" = "sortie de paiement";
+
+/* No comment provided by engineer. */
+"post-dated" = "post-daté";
+
+/* No comment provided by engineer. */
+"Receive bitcoins at this address: %@" = "Recevez des bitcoins à cette adresse: %@";
+
+/* No comment provided by engineer. */
+"received" = "reçu";
+
+/* No comment provided by engineer. */
+"recent transactions" = "transactions récentes";
+
+/* No comment provided by engineer. */
+"remove fee" = "supprimer la commission";
+
+/* No comment provided by engineer. */
+"request expired" = "requête expirée";
+
+/* No comment provided by engineer. */
+"requested network \"%@\" instead of \"%@\"" = "réseau \"%1$@\" requis au lieu du \"%2$@\"";
+
+/* No comment provided by engineer. */
+"rescan" = "re-scanner";
+
+/* No comment provided by engineer. */
+"rescan blockchain" = "re-scanner la blockchain";
+
+/* No comment provided by engineer. */
+"rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescanning can take several minutes)" = "re-scannez la blockchain s'il vous manque des transactions, ou si vous avez des problèmes d'envoi (le rescan peut prendre plusieurs minutes)";
+
+/* No comment provided by engineer. */
+"Scan someone else's QR code to get their bitcoin address. You can send a payment to anyone with an address." = "Scannez le QR code de quelqu'un pour avoir son adresse et lui envoyer des bitcoins.";
+
+/* No comment provided by engineer. */
+"Screenshots are visible to other apps and devices. Generate a new backup phrase and keep it secret." = "Les captures d'écran sont visibles aux autres apps et appareils. Générez une nouvelle phrase de backup et conservez la secrète.";
+
+/* No comment provided by engineer. */
+"Screenshots are visible to other apps and devices. Your funds are at risk. Transfer your balance to another wallet." = "Les captures d'écran sont visibles aux autres apps et appareils. La sécurité de vos fonds est compromise. Transférez-les rapidement vers un autre porte-monnaie";
+
+/* No comment provided by engineer. */
+"seen by %d of %d peers" = "vue par %d sur %d pairs";
+
+/* No comment provided by engineer. */
+"Send %@ (%@) from this private key into your wallet? The bitcoin network will receive a fee of %@ (%@)." = "Envoyer %1$@ (%2$@) depuis cette clé sur votre porte-monnaie? Le réseau bitcoin recevra une commission de %3$@ (%4$@).";
+
+/* No comment provided by engineer. */
+"send as email" = "envoyer comme e-mail";
+
+/* No comment provided by engineer. */
+"send as message" = "envoyer comme message";
+
+/* No comment provided by engineer. */
+"spent address" = "adresse dépensée";
+
+/* No comment provided by engineer. */
+"spent input" = "entrée dépensée";
+
+/* No comment provided by engineer. */
+"sent" = "envoyé";
+
+/* No comment provided by engineer. */
+"sent!" = "envoyé!";
+
+/* No comment provided by engineer. */
+"settings" = "préférences";
+
+/* No comment provided by engineer. */
+"show" = "montrer";
+
+/* No comment provided by engineer. */
+"sms not currently available" = "sms indisponibles";
+
+/* No comment provided by engineer. */
+"status:" = "statut:";
+
+/* No comment provided by engineer. */
+"swept!" = "vidée!";
+
+/* No comment provided by engineer. */
+"syncing..." = "synchronisation...";
+
+/* No comment provided by engineer. */
+"the app will now close" = "l'app va être fermée";
+
+/* No comment provided by engineer. */
+"the bitcoin network will receive a fee of %@ (%@)" = "le réseau bitcoin recevra une commission de %1$@ (%2$@)";
+
+/* No comment provided by engineer. */
+"the standard bitcoin network fee for this transaction is %@ (%@)\n\nremoving this fee may delay confirmation" = "la commission recommandée pour cette transaction est de %1$@ (%2$@)\n\nla supprimer peut entraîner des délais";
+
+/* No comment provided by engineer. */
+"This is your bitcoin address. Tap to copy it or send it by email or sms. The address will change each time you receive funds, but old addresses always work." = "Ceci est votre adresse bitcoin. Touchez-la pour la copier, l'envoyer par e-mail ou sms. Cette adresse change à chaque fois que vous recevez des fonds. Les anciennes adresses continuent cependant de fonctionner.";
+
+/* No comment provided by engineer. */
+"This is your bitcoin balance. Bitcoin is a currency. The exchange rate changes with the market." = "Ceci est votre solde bitcoin. Bitcoin est une monnaie virtuelle. Le taux de change varie avec le marché.";
+
+/* No comment provided by engineer. */
+"this payment address is already in your wallet" = "cette adresse est déjà dans votre porte-monnaie";
+
+/* No comment provided by engineer. */
+"this private key is already in your wallet" = "cette clé privée est déjà dans vogtre porte-monnaie";
+
+/* No comment provided by engineer. */
+"this private key is empty" = "cette clé privée est vide";
+
+/* No comment provided by engineer. */
+"to:" = "à:";
+
+/* No comment provided by engineer. */
+"to: %@" = "à: %@";
+
+/* No comment provided by engineer. */
+"transaction canceled, network timeout" = "transaction annulée, délai réseau expiré";
+
+/* No comment provided by engineer. */
+"transaction fees would cost more than the funds available on this private key (due to tiny \"dust\" deposits)" = "la commission bitcoin est plus importante que les fonds disponible sur cette clé";
+
+/* No comment provided by engineer. */
+"transaction is post-dated" = "transaction post-datée";
+
+/* No comment provided by engineer. */
+"transaction rejected" = "transaction rejetée";
+
+/* No comment provided by engineer. */
+"unexpected response from %@" = "réponse inattendue de %@";
+
+/* No comment provided by engineer. */
+"unkown address" = "adresse inconnue";
+
+/* No comment provided by engineer. */
+"unrecognized address" = "adresse non reconnue";
+
+/* No comment provided by engineer. */
+"unsupported or corrupted document" = "document corrompu ou non supporté";
+
+/* No comment provided by engineer. */
+"unsupported signature type" = "type de signature non supporté";
+
+/* No comment provided by engineer. */
+"unsupported url" = "url non supportée";
+
+/* No comment provided by engineer. */
+"untrusted certificate" = "certificat invalide";
+
+/* No comment provided by engineer. */
+"unverified" = "non-vérifié";
+
+/* No comment provided by engineer. */
+"verified, waiting for confirmation" = "vérifié, en attente de confirmation";
+
+/* No comment provided by engineer. */
+"wallet address" = "adresse de porte-monnaie";
+
+/* No comment provided by engineer. */
+"wallet disabled\n\ntry again after block #%u\n(about %@)" = "porte-monnaie désactivé\n\nréessayez après le block #%1$u\n(environ %2$@)";
+
+/* No comment provided by engineer. */
+"wallet disabled\n\ntry again in %@" = "porte-monnaie désactivé\n\nréessayez dans %@";
+
+/* No comment provided by engineer. */
+"WARNING" = "ATTENTION";
+
+/* No comment provided by engineer. */
+"wipe" = "supprimer";
+
+/* No comment provided by engineer. */
+"you received bitcoin!" = "vous avez reçu des bitcoins!";
+
+/* No comment provided by engineer. */
+"Your wallet may be out of sync.\nThis can often be fixed by rescanning the blockchain." = "Votre porte-monnaie paraît désynchronisé.\nCela est habituellement corrigé par un re-scan de la blockchain.";

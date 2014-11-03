@@ -154,7 +154,7 @@
                                             <rect key="frame" x="15" y="0.0" width="290" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
@@ -230,11 +230,12 @@
                                             <rect key="frame" x="15" y="0.0" width="290" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="highlightedColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="1" green="0.5738075064" blue="0.26619579059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="0.5738075064" blue="0.26619579059999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
                                     </subviews>
+                                    <color key="tintColor" red="1" green="0.5738075064" blue="0.26619579059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -268,6 +269,7 @@
                     <navigationItem key="navigationItem" title="ƀ 0.00 ($0.00)" id="h6T-AD-8zb">
                         <barButtonItem key="backBarButtonItem" title=" " id="hWS-2G-hHE"/>
                         <barButtonItem key="leftBarButtonItem" image="x" id="nxH-ZN-jve">
+                            <color key="tintColor" red="1" green="0.5738075064" blue="0.26619579059999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="done:" destination="6Bl-Zl-U7O" id="qIl-sF-2Yi"/>
                             </connections>
@@ -476,6 +478,7 @@
                     <navigationItem key="navigationItem" title="ƀ 0.00 ($0.00)" id="3hG-i3-g4Y">
                         <barButtonItem key="backBarButtonItem" title=" " id="Huq-Vk-LaF"/>
                         <barButtonItem key="leftBarButtonItem" image="burger" id="lsn-hc-KRM">
+                            <color key="tintColor" red="1" green="0.5738075064" blue="0.26619579059999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="zyy-VL-f65" kind="modal" identifier="SettingsSegue" id="Eks-ag-H7f"/>
                             </connections>
@@ -605,6 +608,7 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="80" minY="0.0" maxX="-80" maxY="0.0"/>
                                 <state key="normal" title="◉">
+                                    <color key="titleColor" red="1" green="0.5738075064" blue="0.26619579059999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -946,6 +950,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="ƀ 0.00 ($0.00)" id="Ddo-ce-xs5">
                         <barButtonItem key="rightBarButtonItem" title="pay" id="f4B-BU-eu2">
+                            <color key="tintColor" red="1" green="0.5738075064" blue="0.26619579059999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="pay:" destination="4fz-p1-NND" id="85R-5b-LgN"/>
                             </connections>
@@ -1373,6 +1378,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="confirm:" id="fQN-xb-SYb">
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="2vu-AA-9sh">
+                            <color key="tintColor" red="1" green="0.5738075064" blue="0.26619579059999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="cancel:" destination="5j4-Re-grj" id="3jF-fF-7CC"/>
                             </connections>

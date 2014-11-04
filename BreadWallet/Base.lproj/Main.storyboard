@@ -154,8 +154,8 @@
                                             <rect key="frame" x="15" y="0.0" width="290" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.1450980392" green="0.42352941179999998" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.1450980392" green="0.42352941179999998" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
                                     </subviews>
@@ -181,8 +181,8 @@
                                             <rect key="frame" x="251" y="12" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.1450980392" green="0.42352941179999998" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="0.1450980392" green="0.42352941179999998" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                         </label>
                                     </subviews>

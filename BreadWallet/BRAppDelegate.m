@@ -67,6 +67,8 @@
     //TODO: ask user if they need to sweep to a new wallet when restoring because it was compromised
 
     //TODO: figure out deterministic builds/removing app sigs: http://www.afp548.com/2012/06/05/re-signining-ios-apps/
+    
+    self.window.tintColor = [UIColor colorWithRed:37/255.0 green:108/255.0 blue:138/255.0 alpha:1.0];
 
     return YES;
 }

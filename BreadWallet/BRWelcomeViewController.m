@@ -66,6 +66,8 @@
         queue:nil usingBlock:^(NSNotification *note) {
             self.wallpaper.center = CGPointMake(self.wallpaper.frame.size.width/2, self.wallpaper.center.y);
         }];
+
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
 - (void)dealloc

@@ -45,7 +45,7 @@
     self.bar2 = [[UIView alloc] initWithFrame:CGRectMake(x - BAR_WIDTH/2.0, y, BAR_WIDTH, BAR_HEIGHT)];
     self.bar3 = [[UIView alloc] initWithFrame:CGRectMake(x - BAR_WIDTH/2.0, y + BAR_SPACING, BAR_WIDTH, BAR_HEIGHT)];
     self.bar1.userInteractionEnabled = self.bar2.userInteractionEnabled = self.bar3.userInteractionEnabled = NO;
-    self.bar1.backgroundColor = self.bar2.backgroundColor = self.bar3.backgroundColor = self.currentTitleColor;
+    self.bar1.backgroundColor = self.bar2.backgroundColor = self.bar3.backgroundColor = [UIColor colorWithRed:37/255.0 green:108/255.0 blue:138/255.0 alpha:1.0];
     [self addSubview:self.bar1];
     [self addSubview:self.bar2];
     [self addSubview:self.bar3];
@@ -91,25 +91,25 @@
 - (void)setTitleColor:(UIColor *)color forState:(UIControlState)state
 {
     [super setTitleColor:color forState:state];
-    self.bar1.backgroundColor = self.bar2.backgroundColor = self.bar3.backgroundColor = self.currentTitleColor;
+    self.bar1.backgroundColor = self.bar2.backgroundColor = self.bar3.backgroundColor = [UIColor colorWithRed:37/255.0 green:108/255.0 blue:138/255.0 alpha:1.0];
 }
 
 - (void)setHighlighted:(BOOL)highlighted
 {
     [super setHighlighted:highlighted];
-    self.bar1.backgroundColor = self.bar2.backgroundColor = self.bar3.backgroundColor = self.currentTitleColor;
+    self.bar1.backgroundColor = self.bar2.backgroundColor = self.bar3.backgroundColor = [UIColor colorWithRed:37/255.0 green:108/255.0 blue:138/255.0 alpha:1.0];
 }
 
 - (void)setEnabled:(BOOL)enabled
 {
     [super setEnabled:enabled];
-    self.bar1.backgroundColor = self.bar2.backgroundColor = self.bar3.backgroundColor = self.currentTitleColor;
+    self.bar1.backgroundColor = self.bar2.backgroundColor = self.bar3.backgroundColor = [UIColor colorWithRed:37/255.0 green:108/255.0 blue:138/255.0 alpha:1.0];
 }
 
 - (void)setSelected:(BOOL)selected
 {
     [super setSelected:selected];
-    self.bar1.backgroundColor = self.bar2.backgroundColor = self.bar3.backgroundColor = self.currentTitleColor;
+    self.bar1.backgroundColor = self.bar2.backgroundColor = self.bar3.backgroundColor = [UIColor colorWithRed:37/255.0 green:108/255.0 blue:138/255.0 alpha:1.0];
 }
 
 - (CGSize)intrinsicContentSize

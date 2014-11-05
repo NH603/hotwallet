@@ -1502,7 +1502,7 @@
 		75B8346619233B550010931E /* dsa_gen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dsa_gen.c; sourceTree = "<group>"; };
 		75BCC59A1946520700EC1A64 /* BreadWalletTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BreadWalletTests.h; sourceTree = "<group>"; };
 		75C1426219A6844200402CE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		75D5F3BE191EC270004AB296 /* breadwallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breadwallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D5F3BE191EC270004AB296 /* hotwallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hotwallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D5F3C1191EC270004AB296 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		75D5F3C3191EC270004AB296 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		75D5F3C5191EC270004AB296 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -2914,7 +2914,7 @@
 		75D5F3BF191EC270004AB296 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75D5F3BE191EC270004AB296 /* breadwallet.app */,
+				75D5F3BE191EC270004AB296 /* hotwallet.app */,
 				75D5F3E5191EC270004AB296 /* BreadWalletTests.xctest */,
 				7579F7D919231A5D00CA56F4 /* libcrypto.a */,
 			);
@@ -3121,7 +3121,7 @@
 			);
 			name = breadwallet;
 			productName = BreadWallet;
-			productReference = 75D5F3BE191EC270004AB296 /* breadwallet.app */;
+			productReference = 75D5F3BE191EC270004AB296 /* hotwallet.app */;
 			productType = "com.apple.product-type.application";
 		};
 		75D5F3E4191EC270004AB296 /* BreadWalletTests */ = {
@@ -3153,7 +3153,7 @@
 				ORGANIZATIONNAME = "Aaron Voisine";
 				TargetAttributes = {
 					75D5F3BD191EC270004AB296 = {
-						DevelopmentTeam = 4R7S6N88W9;
+						DevelopmentTeam = 28E3579XQW;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -3164,6 +3164,7 @@
 						};
 					};
 					75D5F3E4191EC270004AB296 = {
+						DevelopmentTeam = 28E3579XQW;
 						TestTargetID = 75D5F3BD191EC270004AB296;
 					};
 				};
@@ -3993,6 +3994,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BreadWallet/BreadWallet-Prefix.pch";
 				GCC_WARN_PEDANTIC = YES;
@@ -4002,7 +4005,8 @@
 					"$(SRCROOT)/openssl/include",
 				);
 				INFOPLIST_FILE = "BreadWallet/BreadWallet-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = hotwallet;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = GCov_Build;
@@ -4036,7 +4040,7 @@
 		754F4BCF194BBA94004AD9CA /* GCov_Build */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/breadwallet.app/breadwallet";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/hotwallet.app/hotwallet";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -4180,6 +4184,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BreadWallet/BreadWallet-Prefix.pch";
 				GCC_WARN_PEDANTIC = YES;
@@ -4189,7 +4195,8 @@
 					"$(SRCROOT)/openssl/include",
 				);
 				INFOPLIST_FILE = "BreadWallet/BreadWallet-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = hotwallet;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -4199,6 +4206,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BreadWallet/BreadWallet-Prefix.pch";
 				GCC_WARN_PEDANTIC = YES;
@@ -4208,7 +4217,8 @@
 					"$(SRCROOT)/openssl/include",
 				);
 				INFOPLIST_FILE = "BreadWallet/BreadWallet-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = hotwallet;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -4216,7 +4226,7 @@
 		75D5F3FA191EC270004AB296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/breadwallet.app/breadwallet";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/hotwallet.app/hotwallet";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -4238,7 +4248,7 @@
 		75D5F3FB191EC270004AB296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/breadwallet.app/breadwallet";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/hotwallet.app/hotwallet";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

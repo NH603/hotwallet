@@ -1598,6 +1598,10 @@
 		84C92C67197C3E0300BD1664 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
 		84F68C881975E9E2002FC300 /* BRScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRScanViewController.h; sourceTree = "<group>"; };
 		84F68C891975E9E2002FC300 /* BRScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRScanViewController.m; sourceTree = "<group>"; };
+		D447966E1A0A769A00D3ADC1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		D447966F1A0A769A00D3ADC1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D44796701A0A769A00D3ADC1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D44796711A0A769A00D3ADC1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3176,6 +3180,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 75D5F3B5191EC270004AB296;
 			productRefGroup = 75D5F3BF191EC270004AB296 /* Products */;
@@ -3916,6 +3921,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				75A1E4D5193869C500D85BEE /* en */,
+				D44796701A0A769A00D3ADC1 /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -3924,6 +3930,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				75D5F3CB191EC270004AB296 /* en */,
+				D447966F1A0A769A00D3ADC1 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -3933,6 +3940,7 @@
 			children = (
 				75D5F3DD191EC270004AB296 /* Base */,
 				75C1426219A6844200402CE2 /* en */,
+				D447966E1A0A769A00D3ADC1 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -3941,6 +3949,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				75D5F3F0191EC270004AB296 /* en */,
+				D44796711A0A769A00D3ADC1 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

@@ -1146,10 +1146,10 @@
                                 </connections>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce6-Wi-wk4">
-                                <rect key="frame" x="45" y="250" width="230" height="44"/>
+                                <rect key="frame" x="25" y="250" width="270" height="44"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="230" id="0My-rH-7KZ"/>
+                                    <constraint firstAttribute="width" constant="270" id="0My-rH-7KZ"/>
                                     <constraint firstAttribute="height" constant="44" id="WmA-Sw-dye"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
@@ -1173,10 +1173,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfj-xS-5rN">
-                                <rect key="frame" x="45" y="334" width="230" height="44"/>
+                                <rect key="frame" x="25" y="334" width="270" height="44"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="230" id="QCT-Cx-Vgd"/>
+                                    <constraint firstAttribute="width" constant="270" id="QCT-Cx-Vgd"/>
                                     <constraint firstAttribute="height" constant="44" id="nsj-xF-Ebz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
@@ -1196,7 +1196,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgP-DR-cyl">
-                                <rect key="frame" x="40" y="378" width="240" height="112"/>
+                                <rect key="frame" x="20" y="378" width="280" height="112"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
@@ -1304,10 +1304,10 @@
                                 <rect key="frame" x="32" y="209" width="257" height="151"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOa-zm-TDG">
-                                <rect key="frame" x="70" y="210" width="180" height="44"/>
+                                <rect key="frame" x="45" y="210" width="230" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="TyG-sW-nGi"/>
-                                    <constraint firstAttribute="width" constant="180" id="pdz-u8-b49"/>
+                                    <constraint firstAttribute="width" constant="230" id="pdz-u8-b49"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -1324,10 +1324,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4w7-k8-9wY">
-                                <rect key="frame" x="70" y="314" width="180" height="44"/>
+                                <rect key="frame" x="45" y="314" width="230" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="SS8-xT-kei"/>
-                                    <constraint firstAttribute="width" constant="180" id="Vtf-KB-uml"/>
+                                    <constraint firstAttribute="width" constant="230" id="Vtf-KB-uml"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -1801,10 +1801,10 @@ Use it to restore your wallet on another device if this one is ever lost or brok
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4M-yq-26d">
-                                <rect key="frame" x="57" y="362" width="205" height="44"/>
+                                <rect key="frame" x="44.5" y="362" width="230" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="8HY-tn-QvG"/>
-                                    <constraint firstAttribute="width" constant="205" id="opI-fF-cVd"/>
+                                    <constraint firstAttribute="width" constant="230" id="opI-fF-cVd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>

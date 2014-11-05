@@ -12,7 +12,7 @@
 "4w7-k8-9wY.normalTitle" = "restaurer depuis un backup";
 
 /* Class = "IBUILabel"; text = "ask"; ObjectID = "9B6-kc-khb"; */
-"9B6-kc-khb.text" = "demande";
+"9B6-kc-khb.text" = " ";
 
 /* Class = "IBUIBarButtonItem"; title = " "; ObjectID = "9L3-gM-TgP"; */
 "9L3-gM-TgP.title" = " ";
@@ -81,7 +81,7 @@
 "VM4-Ie-x8Z.text" = "Titre";
 
 /* Class = "IBUILabel"; text = "remove standard fees"; ObjectID = "WB9-ti-D76"; */
-"WB9-ti-D76.text" = "désactiver commissions standard";
+"WB9-ti-D76.text" = "désactiver commissions";
 
 /* Class = "IBUILabel"; text = "subtitle"; ObjectID = "WHQ-zW-IjD"; */
 "WHQ-zW-IjD.text" = "sous-titre";

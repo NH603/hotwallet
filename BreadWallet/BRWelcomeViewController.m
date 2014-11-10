@@ -36,8 +36,8 @@
 @property (nonatomic, strong) id foregroundObserver, backgroundObserver;
 @property (nonatomic, strong) UINavigationController *seedNav;
 
-@property (nonatomic, strong) IBOutlet UIView *paralax, *wallpaper;
-@property (nonatomic, strong) IBOutlet UILabel *startLabel, *warningLabel;
+@property (nonatomic, strong) IBOutlet UIView *paralax, *wallpaper, *warningView;
+@property (nonatomic, strong) IBOutlet UILabel *startLabel;
 @property (nonatomic, strong) IBOutlet UIButton *generateButton, *showButton;
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint *logoXCenter, *walletXCenter, *restoreXCenter, *paralaxXLeft;
 
@@ -130,29 +130,11 @@
 //    [segue.destinationViewController setModalPresentationStyle:UIModalPresentationCustom];
     
     self.startLabel = (id)[[segue.destinationViewController view] viewWithTag:4];
-    self.warningLabel = (id)[[segue.destinationViewController view] viewWithTag:2];
+    self.warningView = (id)[[segue.destinationViewController view] viewWithTag:2];
     self.generateButton = (id)[[segue.destinationViewController view] viewWithTag:1];
     [self.generateButton addTarget:self action:@selector(generate:) forControlEvents:UIControlEventTouchUpInside];
     self.showButton = (id)[[segue.destinationViewController view] viewWithTag:3];
     [self.showButton addTarget:self action:@selector(show:) forControlEvents:UIControlEventTouchUpInside];
-    
-    if (self.warningLabel) {
-        NSTextAttachment *noEye = [NSTextAttachment new], *noShot = [NSTextAttachment new],
-                         *noKey = [NSTextAttachment new];
-        NSMutableAttributedString *s = [[NSMutableAttributedString alloc]
-                                        initWithAttributedString:self.warningLabel.attributedText];
-    
-        noEye.image = [UIImage imageNamed:@"no-eye"];
-        [s replaceCharactersInRange:[s.string rangeOfString:@"%no-eye%"]
-         withAttributedString:[NSAttributedString attributedStringWithAttachment:noEye]];
-        noShot.image = [UIImage imageNamed:@"no-shot"];
-        [s replaceCharactersInRange:[s.string rangeOfString:@"%no-shot%"]
-         withAttributedString:[NSAttributedString attributedStringWithAttachment:noShot]];
-        noKey.image = [UIImage imageNamed:@"no-key"];
-        [s replaceCharactersInRange:[s.string rangeOfString:@"%no-key%"]
-         withAttributedString:[NSAttributedString attributedStringWithAttachment:noKey]];
-        self.warningLabel.attributedText = s;
-    }
 }
 
 - (void)animateWallpaper
@@ -208,11 +190,11 @@
 
     self.seedNav = [self.storyboard instantiateViewControllerWithIdentifier:@"SeedNav"];
     
-    self.warningLabel.hidden = self.showButton.hidden = NO;
-    self.warningLabel.alpha = self.showButton.alpha = 0.0;
+    self.warningView.hidden = self.showButton.hidden = NO;
+    self.warningView.alpha = self.showButton.alpha = 0.0;
         
     [UIView animateWithDuration:0.5 animations:^{
-        self.warningLabel.alpha = self.showButton.alpha = 1.0;
+        self.warningView.alpha = self.showButton.alpha = 1.0;
         self.navigationController.navigationBar.topItem.titleView.alpha = 0.33*0.5;
         self.startLabel.alpha = 0.33;
         self.generateButton.alpha = 0.33;

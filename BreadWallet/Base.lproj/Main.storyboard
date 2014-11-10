@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BeO-Yt-c4D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BeO-Yt-c4D">
     <dependencies>
         <deployment identifier="iOS"/>
         <development version="5100" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--ƀ 0.00 ($0.00)-->
@@ -1774,34 +1775,32 @@ Cgo
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="266" translatesAutoresizingMaskIntoConstraints="NO" id="wDZ-DN-szv">
-                                <rect key="frame" x="27" y="137" width="266" height="94"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">start a new wallet by generating a wallet backup phrase
-</string>
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-Use it to restore your wallet on another device if this one is ever lost or broken.</string>
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="start a new wallet by generating a wallet backup phrase" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" preferredMaxLayoutWidth="266" translatesAutoresizingMaskIntoConstraints="NO" id="Hnv-2O-Gsw">
+                                <rect key="frame" x="26" y="131" width="266" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="hSA-6i-rqV"/>
+                                    <constraint firstAttribute="height" constant="55" id="mqh-CV-HC8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="shadowColor" white="0.0" alpha="0.14999999999999999" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use it to restore your wallet on another device if this one is ever lost or broken." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" preferredMaxLayoutWidth="266" translatesAutoresizingMaskIntoConstraints="NO" id="PwF-x9-r0S">
+                                <rect key="frame" x="26" y="194" width="266" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="cHd-zg-G20"/>
+                                    <constraint firstAttribute="height" constant="59" id="zxS-Us-6d7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.14999999999999999" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4M-yq-26d">
-                                <rect key="frame" x="44.5" y="362" width="230" height="44"/>
+                                <rect key="frame" x="44" y="362" width="230" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="8HY-tn-QvG"/>
                                     <constraint firstAttribute="width" constant="230" id="opI-fF-cVd"/>
@@ -1817,46 +1816,59 @@ Use it to restore your wallet on another device if this one is ever lost or brok
                                     <color key="titleShadowColor" white="1" alpha="0.14999999999999999" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="rLQ-Ub-gHT">
+                            <view hidden="YES" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNW-we-FTJ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S84-6b-61l">
+                                        <rect key="frame" x="8" y="62" width="304" height="385"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no-eye" translatesAutoresizingMaskIntoConstraints="NO" id="Tz7-Ic-5Af">
+                                                <rect key="frame" x="127" y="56" width="50" height="50"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no-shot" translatesAutoresizingMaskIntoConstraints="NO" id="zsW-a9-gTz">
+                                                <rect key="frame" x="127" y="157" width="50" height="50"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no-key" translatesAutoresizingMaskIntoConstraints="NO" id="SPo-kH-OgP">
+                                                <rect key="frame" x="127" y="258" width="50" height="50"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WARNING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="boW-3A-lc2">
+                                                <rect key="frame" x="-8" y="0.0" width="304" height="63"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="48"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DO NOT let anyone see your backup phrase or they can spend your bitcoins." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" preferredMaxLayoutWidth="264" translatesAutoresizingMaskIntoConstraints="NO" id="kV1-2h-a7z">
+                                                <rect key="frame" x="20" y="97" width="264" height="63"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DO NOT take a screenshot. Screenshots are visible to other apps and devices." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" preferredMaxLayoutWidth="264" translatesAutoresizingMaskIntoConstraints="NO" id="j8z-Gs-DdK">
+                                                <rect key="frame" x="20" y="199" width="264" height="63"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DO NOT type your backup phrase into password managers or elsewhere. Other devices may be infected." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" preferredMaxLayoutWidth="264" translatesAutoresizingMaskIntoConstraints="NO" id="hZ6-ye-ikW">
+                                                <rect key="frame" x="20" y="302" width="264" height="63"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="304" id="LNM-n0-EiM"/>
+                                            <constraint firstAttribute="height" constant="385" id="Njo-lt-gjp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="    WARNING">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="48" name="HelveticaNeue-Thin"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-                                        
-                                %no-eye%
-      DO NOT let anyone see your backup
-      phrase or they can spend your bitcoins.
-
-                                %no-shot%
-      DO NOT take a screenshot. Screenshots
-      are visible to other apps and devices.
-
-                                %no-key%
-      DO NOT type your backup phrase into
-      password managers or elsewhere. Other
-      devices may be infected.
-
-
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="0.14999999999999999" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="0.0" height="1"/>
-                            </label>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="S84-6b-61l" secondAttribute="centerX" id="7dR-Ul-3rB"/>
+                                    <constraint firstItem="S84-6b-61l" firstAttribute="top" secondItem="aNW-we-FTJ" secondAttribute="top" constant="62" id="gaP-ob-w5e"/>
+                                </constraints>
+                            </view>
                             <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efL-Cj-Aho">
                                 <rect key="frame" x="204" y="510" width="116" height="58"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -1871,14 +1883,16 @@ Use it to restore your wallet on another device if this one is ever lost or brok
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zSf-HG-qwr" firstAttribute="top" secondItem="efL-Cj-Aho" secondAttribute="bottom" id="85y-OA-T7Y"/>
-                            <constraint firstItem="rLQ-Ub-gHT" firstAttribute="leading" secondItem="ttV-Ha-QVS" secondAttribute="leading" id="A7k-ZI-qHb"/>
-                            <constraint firstAttribute="centerX" secondItem="wDZ-DN-szv" secondAttribute="centerX" id="Ci7-vy-9rd"/>
-                            <constraint firstAttribute="trailing" secondItem="rLQ-Ub-gHT" secondAttribute="trailing" id="EKo-Wt-pcd"/>
-                            <constraint firstItem="rLQ-Ub-gHT" firstAttribute="top" secondItem="ttV-Ha-QVS" secondAttribute="top" id="bws-sc-dOA"/>
-                            <constraint firstAttribute="centerY" secondItem="wDZ-DN-szv" secondAttribute="centerY" constant="100" id="dJv-Ep-XBg"/>
+                            <constraint firstItem="aNW-we-FTJ" firstAttribute="top" secondItem="ttV-Ha-QVS" secondAttribute="topMargin" id="CPo-wU-T0i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aNW-we-FTJ" secondAttribute="trailing" constant="-16" id="M8f-kB-3yH"/>
+                            <constraint firstAttribute="centerX" secondItem="Hnv-2O-Gsw" secondAttribute="centerX" constant="1" id="MIp-gC-cqL"/>
+                            <constraint firstItem="aNW-we-FTJ" firstAttribute="leading" secondItem="ttV-Ha-QVS" secondAttribute="leadingMargin" constant="-16" id="QuZ-MM-BZ9"/>
+                            <constraint firstItem="zSf-HG-qwr" firstAttribute="top" secondItem="aNW-we-FTJ" secondAttribute="bottom" id="Wgq-Nc-Dxw"/>
+                            <constraint firstAttribute="centerY" secondItem="Hnv-2O-Gsw" secondAttribute="centerY" constant="125.5" id="eCO-I3-MO8"/>
                             <constraint firstAttribute="trailing" secondItem="efL-Cj-Aho" secondAttribute="trailing" id="ffZ-DN-LfC"/>
-                            <constraint firstItem="zSf-HG-qwr" firstAttribute="top" secondItem="rLQ-Ub-gHT" secondAttribute="bottom" id="uDh-yS-dbc"/>
-                            <constraint firstAttribute="centerX" secondItem="A4M-yq-26d" secondAttribute="centerX" id="uWk-tD-YFh"/>
+                            <constraint firstAttribute="centerX" secondItem="PwF-x9-r0S" secondAttribute="centerX" constant="1" id="l5R-g6-8Bh"/>
+                            <constraint firstAttribute="centerY" secondItem="PwF-x9-r0S" secondAttribute="centerY" constant="60.5" id="mI9-gy-CKl"/>
+                            <constraint firstAttribute="centerX" secondItem="A4M-yq-26d" secondAttribute="centerX" constant="1" id="uWk-tD-YFh"/>
                             <constraint firstItem="A4M-yq-26d" firstAttribute="centerY" secondItem="ttV-Ha-QVS" secondAttribute="centerY" constant="100" id="wJO-uI-4MN"/>
                         </constraints>
                     </view>
@@ -2149,6 +2163,9 @@ it and you may lose your bitcoins forever.</string>
         <image name="deletetoleft-pressed" width="29" height="23"/>
         <image name="flash" width="33" height="33"/>
         <image name="lock" width="12" height="16"/>
+        <image name="no-eye" width="40" height="40"/>
+        <image name="no-key" width="40" height="40"/>
+        <image name="no-shot" width="40" height="40"/>
         <image name="refresh" width="9" height="11"/>
         <image name="wallpaper-default" width="480" height="568"/>
         <image name="wallpaper-welcome" width="758" height="568"/>

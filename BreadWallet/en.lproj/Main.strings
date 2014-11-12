@@ -223,3 +223,21 @@
 
 /* Class = "IBUILabel"; text = "enter pin"; ObjectID = "zhS-gG-oV0"; */
 "zhS-gG-oV0.text" = "enter pin";
+
+/* Class = "IBUILabel"; text = "start a new wallet by generating a wallet backup phrase"; ObjectID = "Hnv-2O-Gsw"; */
+"Hnv-2O-Gsw.text" = "start a new wallet by generating a wallet backup phrase";
+
+/* Class = "IBUILabel"; text = "Use it to restore your wallet on another device if this one is ever lost or broken."; ObjectID = "PwF-x9-r0S"; */
+"PwF-x9-r0S.text" = "Use it to restore your wallet on another device if this one is ever lost or broken.";
+
+/* Class = "IBUILabel"; text = "WARNING"; ObjectID = "boW-3A-lc2"; */
+"boW-3A-lc2.text" = "WARNING";
+
+/* Class = "IBUILabel"; text = "DO NOT let anyone see your backup phrase or they can spend your bitcoins."; ObjectID = "kV1-2h-a7z"; */
+"kV1-2h-a7z.text" = "DO NOT let anyone see your backup phrase or they can spend your bitcoins.";
+
+/* Class = "IBUILabel"; text = "DO NOT take a screenshot. Screenshots are visible to other apps and devices."; ObjectID = "j8z-Gs-DdK"; */
+"j8z-Gs-DdK.text" = "DO NOT take a screenshot. Screenshots are visible to other apps and devices.";
+
+/* Class = "IBUILabel"; text = "DO NOT type your backup phrase into password managers or elsewhere. Other devices may be infected."; ObjectID = "hZ6-ye-ikW"; */
+"hZ6-ye-ikW.text" = "DO NOT type your backup phrase into password managers or elsewhere. Other devices may be infected.";

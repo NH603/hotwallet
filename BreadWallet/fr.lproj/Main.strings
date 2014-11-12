@@ -199,3 +199,21 @@
 
 /* Class = "IBUILabel"; text = "88.8%"; ObjectID = "xl3-sr-16q"; */
 "xl3-sr-16q.text" = "88.8%";
+
+/* Class = "IBUILabel"; text = "start a new wallet by generating a wallet backup phrase"; ObjectID = "Hnv-2O-Gsw"; */
+"Hnv-2O-Gsw.text" = "créer un nouveau porte-monnaie en générant une phrase de backup";
+
+/* Class = "IBUILabel"; text = "Use it to restore your wallet on another device if this one is ever lost or broken."; ObjectID = "PwF-x9-r0S"; */
+"PwF-x9-r0S.text" = "Utilisez la pour restaurer votre porte-monnaie sur un autre appareil si jamais celui-ci est perdu ou endommagé.";
+
+/* Class = "IBUILabel"; text = "WARNING"; ObjectID = "boW-3A-lc2"; */
+"boW-3A-lc2.text" = "ATTENTION";
+
+/* Class = "IBUILabel"; text = "DO NOT let anyone see your backup phrase or they can spend your bitcoins."; ObjectID = "kV1-2h-a7z"; */
+"kV1-2h-a7z.text" = "Ne laissez personne voir votre phrase de backup ou elle pourrait dépenser vos bitcoins.";
+
+/* Class = "IBUILabel"; text = "DO NOT take a screenshot. Screenshots are visible to other apps and devices."; ObjectID = "j8z-Gs-DdK"; */
+"j8z-Gs-DdK.text" = "Ne prennez pas une capture d'écran. Les captures d'écran sont visibles par les autres applications et appareils.";
+
+/* Class = "IBUILabel"; text = "DO NOT type your backup phrase into password managers or elsewhere. Other devices may be infected."; ObjectID = "hZ6-ye-ikW"; */
+"hZ6-ye-ikW.text" = "Ne saisissez pas votre phrase de backup dans un gestionnaire de mot de passe ou un autre logiciel. Ils pourraient être compromis.";

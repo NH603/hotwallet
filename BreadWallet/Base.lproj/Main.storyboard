@@ -1726,10 +1726,10 @@ Cgo
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="start a new wallet by generating a wallet backup phrase" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" preferredMaxLayoutWidth="266" translatesAutoresizingMaskIntoConstraints="NO" id="Hnv-2O-Gsw">
-                                <rect key="frame" x="26" y="131" width="266" height="55"/>
+                                <rect key="frame" x="26" y="123" width="266" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="266" id="hSA-6i-rqV"/>
-                                    <constraint firstAttribute="height" constant="55" id="mqh-CV-HC8"/>
+                                    <constraint firstAttribute="height" constant="70" id="mqh-CV-HC8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -1738,7 +1738,7 @@ Cgo
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use it to restore your wallet on another device if this one is ever lost or broken." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" preferredMaxLayoutWidth="266" translatesAutoresizingMaskIntoConstraints="NO" id="PwF-x9-r0S">
-                                <rect key="frame" x="26" y="194" width="266" height="59"/>
+                                <rect key="frame" x="26" y="214" width="266" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="266" id="cHd-zg-G20"/>
                                     <constraint firstAttribute="height" constant="59" id="zxS-Us-6d7"/>
@@ -1800,7 +1800,7 @@ Cgo
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DO NOT type your backup phrase into password managers or elsewhere. Other devices may be infected." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" preferredMaxLayoutWidth="264" translatesAutoresizingMaskIntoConstraints="NO" id="hZ6-ye-ikW">
-                                                <rect key="frame" x="20" y="302" width="264" height="63"/>
+                                                <rect key="frame" x="20" y="302" width="264" height="83"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1841,7 +1841,7 @@ Cgo
                             <constraint firstAttribute="centerY" secondItem="Hnv-2O-Gsw" secondAttribute="centerY" constant="125.5" id="eCO-I3-MO8"/>
                             <constraint firstAttribute="trailing" secondItem="efL-Cj-Aho" secondAttribute="trailing" id="ffZ-DN-LfC"/>
                             <constraint firstAttribute="centerX" secondItem="PwF-x9-r0S" secondAttribute="centerX" constant="1" id="l5R-g6-8Bh"/>
-                            <constraint firstAttribute="centerY" secondItem="PwF-x9-r0S" secondAttribute="centerY" constant="60.5" id="mI9-gy-CKl"/>
+                            <constraint firstAttribute="centerY" secondItem="PwF-x9-r0S" secondAttribute="centerY" constant="40" id="mI9-gy-CKl"/>
                             <constraint firstAttribute="centerX" secondItem="A4M-yq-26d" secondAttribute="centerX" constant="1" id="uWk-tD-YFh"/>
                             <constraint firstItem="A4M-yq-26d" firstAttribute="centerY" secondItem="ttV-Ha-QVS" secondAttribute="centerY" constant="100" id="wJO-uI-4MN"/>
                         </constraints>

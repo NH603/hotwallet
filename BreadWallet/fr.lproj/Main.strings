@@ -204,7 +204,7 @@
 "Hnv-2O-Gsw.text" = "créer un nouveau porte-monnaie en générant une phrase de backup";
 
 /* Class = "IBUILabel"; text = "Use it to restore your wallet on another device if this one is ever lost or broken."; ObjectID = "PwF-x9-r0S"; */
-"PwF-x9-r0S.text" = "Utilisez la pour restaurer votre porte-monnaie sur un autre appareil si jamais celui-ci est perdu ou endommagé.";
+"PwF-x9-r0S.text" = "Utilisez-la pour restaurer votre porte-monnaie sur un autre appareil si jamais celui-ci est perdu ou endommagé.";
 
 /* Class = "IBUILabel"; text = "WARNING"; ObjectID = "boW-3A-lc2"; */
 "boW-3A-lc2.text" = "ATTENTION";
@@ -217,3 +217,9 @@
 
 /* Class = "IBUILabel"; text = "DO NOT type your backup phrase into password managers or elsewhere. Other devices may be infected."; ObjectID = "hZ6-ye-ikW"; */
 "hZ6-ye-ikW.text" = "Ne saisissez pas votre phrase de backup dans un gestionnaire de mot de passe ou un autre logiciel. Ils pourraient être compromis.";
+
+/* Class = "IBUILabel"; text = "this is your wallet backup phrase"; ObjectID = "DVS-O8-EtY"; */
+"DVS-O8-EtY.text" = "voici votre phrase de backup";
+
+/* Class = "IBUILabel"; text = "WRITE IT DOWN and keep it safe. Lose it and you may lose your bitcoins forever."; ObjectID = "XH1-dG-9WU"; */
+"XH1-dG-9WU.text" = "ECRIVEZ-LA et conservez la précieusement. Perdez-la et vous pourriez perdre vos bitcoins à jamais.";

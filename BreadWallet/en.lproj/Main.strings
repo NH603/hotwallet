@@ -241,3 +241,9 @@
 
 /* Class = "IBUILabel"; text = "DO NOT type your backup phrase into password managers or elsewhere. Other devices may be infected."; ObjectID = "hZ6-ye-ikW"; */
 "hZ6-ye-ikW.text" = "DO NOT type your backup phrase into password managers or elsewhere. Other devices may be infected.";
+
+/* Class = "IBUILabel"; text = "this is your wallet backup phrase"; ObjectID = "DVS-O8-EtY"; */
+"DVS-O8-EtY.text" = "this is your wallet backup phrase";
+
+/* Class = "IBUILabel"; text = "WRITE IT DOWN and keep it safe. Lose it and you may lose your bitcoins forever."; ObjectID = "XH1-dG-9WU"; */
+"XH1-dG-9WU.text" = "WRITE IT DOWN and keep it safe. Lose it and you may lose your bitcoins forever.";

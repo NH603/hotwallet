@@ -97,7 +97,13 @@
 "caution" = "attention";
 
 /* No comment provided by engineer. */
+"change pin" = "changer votre code";
+
+/* No comment provided by engineer. */
 "checking private key balance..." = "vérification du solde...";
+
+/* No comment provided by engineer. */
+"choose a pin" = "choisissez un code";
 
 /* No comment provided by engineer. */
 "clipboard doesn't contain a valid bitcoin address" = "le presse-papiers ne contient pas d'adresse valide";
@@ -142,7 +148,7 @@
 "days" = "jours";
 
 /* No comment provided by engineer. */
-"delete" = "supprimer";
+"delete" = "effacer";
 
 /* No comment provided by engineer. */
 "DEVICE SECURITY COMPROMISED\nAny 'jailbreak' app can access any other app's keychain data (and steal your bitcoins)." = "SÉCURITÉ COMPROMISE\nToutes les apps 'jailbreak' peuvent accéder à votre porte-monnaie.";
@@ -161,6 +167,12 @@
 
 /* No comment provided by engineer. */
 "email not configured" = "email non configuré";
+
+/* No comment provided by engineer. */
+"enter current pin" = "saisissez votre code actuel";
+
+/* No comment provided by engineer. */
+"enter pin" = "saisissez votre code";
 
 /* No comment provided by engineer. */
 "turn device passcode on" = "activer code confidentiel";
@@ -253,6 +265,9 @@
 "payment output" = "sortie de paiement";
 
 /* No comment provided by engineer. */
+"pin changed" = "code changé";
+
+/* No comment provided by engineer. */
 "post-dated" = "post-daté";
 
 /* No comment provided by engineer. */
@@ -260,6 +275,9 @@
 
 /* No comment provided by engineer. */
 "received" = "reçu";
+
+/* No comment provided by engineer. */
+"reenter pin" = "resaisissez le code";
 
 /* No comment provided by engineer. */
 "recent transactions" = "transactions récentes";

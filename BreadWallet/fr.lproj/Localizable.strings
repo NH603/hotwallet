@@ -12,7 +12,7 @@
 "\nbitcoin network fee + %@ (%@)" = "\ncommission bitcoin + %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nDO NOT let anyone see your backup phrase or they can spend your bitcoins.\n\nDO NOT take a screenshot. Screenshots are visible to other apps and devices.\n\nDO NOT type your backup phrase into password managers or elsewhere. Other devices may be infected.\n" = "\nNe commiquez-pas votre phrase de backup, vos fonds seraient compromis.\n\nNe prenez pas de capture d'écran, ils sont visibles pas les autres applications.\n\nNe sauvegardez pas votre phrase de backup dans un gestionnaire de mots de passe.\n";
+"\nDO NOT let anyone see your backup phrase or they can spend your bitcoins.\n\nDO NOT take a screenshot. Screenshots are visible to other apps and devices.\n" = "\nNe commiquez-pas votre phrase de backup, vos fonds seraient compromis.\n\nNe prenez pas de capture d'écran, ils sont visibles pas les autres applications.\n\nNe sauvegardez pas votre phrase de backup dans un gestionnaire de mots de passe.\n";
 
 /* No comment provided by engineer. */
 "\ngo to settings and turn passcode on to access restricted areas of your wallet" = "\nallez dans les réglages et activez un code confidentiel pour un accès complet";
@@ -298,7 +298,7 @@
 "rescan blockchain" = "re-scanner la blockchain";
 
 /* No comment provided by engineer. */
-"rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescanning can take several minutes)" = "re-scannez la blockchain s'il vous manque des transactions, ou si vous avez des problèmes d'envoi (le rescan peut prendre plusieurs minutes)";
+"rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescaning can take several minutes)" = "re-scannez la blockchain s'il vous manque des transactions, ou si vous avez des problèmes d'envoi (le rescan peut prendre plusieurs minutes)";
 
 /* No comment provided by engineer. */
 "Scan someone else's QR code to get their bitcoin address. You can send a payment to anyone with an address." = "Scannez le QR code de quelqu'un pour avoir son adresse et lui envoyer des bitcoins.";

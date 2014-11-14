@@ -210,13 +210,13 @@
 "boW-3A-lc2.text" = "ATTENTION";
 
 /* Class = "IBUILabel"; text = "DO NOT let anyone see your backup phrase or they can spend your bitcoins."; ObjectID = "kV1-2h-a7z"; */
-"kV1-2h-a7z.text" = "Ne laissez personne voir votre phrase de backup ou elle pourrait dépenser vos bitcoins.";
+"kV1-2h-a7z.text" = "Ne commiquez-pas votre phrase de backup, vos fonds seraient compromis.";
 
 /* Class = "IBUILabel"; text = "DO NOT take a screenshot. Screenshots are visible to other apps and devices."; ObjectID = "j8z-Gs-DdK"; */
-"j8z-Gs-DdK.text" = "Ne prennez pas une capture d'écran. Les captures d'écran sont visibles par les autres applications et appareils.";
+"j8z-Gs-DdK.text" = "Ne prenez pas de capture d'écran, ils sont visibles pas les autres applications.";
 
 /* Class = "IBUILabel"; text = "DO NOT type your backup phrase into password managers or elsewhere. Other devices may be infected."; ObjectID = "hZ6-ye-ikW"; */
-"hZ6-ye-ikW.text" = "Ne saisissez pas votre phrase de backup dans un gestionnaire de mot de passe ou un autre logiciel. Ils pourraient être compromis.";
+"hZ6-ye-ikW.text" = "Ne sauvegardez pas votre phrase de backup dans un gestionnaire de mots de passe.";
 
 /* Class = "IBUILabel"; text = "this is your wallet backup phrase"; ObjectID = "DVS-O8-EtY"; */
 "DVS-O8-EtY.text" = "voici votre phrase de backup";

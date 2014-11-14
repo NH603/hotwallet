@@ -8,7 +8,7 @@
 "\nbitcoin network fee + %@ (%@)" = "\nbitcoin network fee + %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nDO NOT let anyone see your backup phrase or they can spend your bitcoins.\n\nDO NOT take a screenshot. Screenshots are visible to other apps and devices.\n" = "\nDO NOT let anyone see your backup phrase or they can spend your bitcoins.\n\nDO NOT take a screenshot. Screenshots are visible to other apps and devices.\n";
+"\nDO NOT let anyone see your backup phrase or they can spend your bitcoins.\n\nDO NOT take a screenshot. Screenshots are visible to other apps and devices.\n" = "\nDO NOT let anyone see your backup phrase or they can spend your bitcoins.\n\nDO NOT take a screenshot. Screenshots are visible to other apps and devices.\nDO NOT type your backup phrase into password managers or elsewhere. Other devices may be infected.\n\n";
 
 /* No comment provided by engineer. */
 " - included in block #%d" = " - included in block #%d";
@@ -290,7 +290,7 @@
 "rescan blockchain" = "rescan blockchain";
 
 /* No comment provided by engineer. */
-"rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescaning can take several minutes)" = "rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescaning can take several minutes)";
+"rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescaning can take several minutes)" = "rescan blockchain if you think you may have missing transactions, or are having trouble sending (rescanning can take several minutes)";
 
 /* No comment provided by engineer. */
 "reset pin" = "reset pin";

@@ -234,7 +234,12 @@
     }];
 }
 
-- (IBAction)about:(id)sender
+- (IBAction)aboutPaymium:(id)sender
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://paymium.com"]];
+}
+
+- (IBAction)aboutBreadwallet:(id)sender
 {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://breadwallet.com"]];
 }
@@ -631,7 +636,8 @@
                      withString:NSBundle.mainBundle.infoDictionary[@"CFBundleShortVersionString"]];
                     [s replaceCharactersInRange:[s.string rangeOfString:@"%net%"] withString:@""];
                     l.attributedText = s;
-                    [l.superview.gestureRecognizers.firstObject addTarget:self action:@selector(about:)];
+                    [(id)[c.view viewWithTag:998].gestureRecognizers.firstObject addTarget:self action:@selector(aboutPaymium:)];
+                    [(id)[c.view viewWithTag:999].gestureRecognizers.firstObject addTarget:self action:@selector(aboutBreadwallet:)];
                     
 #ifdef DEBUG
                     [(UITextView *)[c.view viewWithTag:412]

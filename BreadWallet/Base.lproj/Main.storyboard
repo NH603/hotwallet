@@ -1601,7 +1601,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePg-dk-slQ">
-                                <rect key="frame" x="0.0" y="184" width="320" height="200"/>
+                                <rect key="frame" x="0.0" y="134" width="320" height="300"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wyo-tk-JbR">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
@@ -1611,14 +1611,59 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" clipsSubviews="YES" tag="411" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="233" translatesAutoresizingMaskIntoConstraints="NO" id="uvz-hk-Nr4">
-                                        <rect key="frame" x="44" y="22" width="233" height="156"/>
+                                        <rect key="frame" x="44" y="32" width="233" height="236.5"/>
                                         <gestureRecognizers/>
                                         <attributedString key="attributedText">
+                                            <fragment content="Hotwallet v%ver%%net% copyright © 2014 Paymium ">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="paymium.com">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.1450980392" green="0.42352941179999998" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
                                             <fragment>
-                                                <string key="content">breadwallet v%ver%%net%
-copyright © 2014 Aaron Voisine
-
-this app is open source
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="exchange rate data provided by paymium and blockchain.info/ticker">
+                                                <attributes>
+                                                    <font key="NSFont" size="15" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">  Hotwallet is based on breadwallet
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">copyright © 2014 Aaron Voisine
+breadwallet is open source
 </string>
                                                 <attributes>
                                                     <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
@@ -1632,52 +1677,61 @@ this app is open source
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                                 </attributes>
                                             </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment content="exchange rate data provided by blockchain.info/ticker">
-                                                <attributes>
-                                                    <font key="NSFont" size="15" name="HelveticaNeue-Light"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                </attributes>
-                                            </fragment>
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4X-xw-xAl">
-                                        <rect key="frame" x="0.0" y="199" width="320" height="1"/>
+                                        <rect key="frame" x="0.0" y="299" width="320" height="1"/>
                                         <color key="backgroundColor" white="0.67000000000000004" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="0.5" id="UhR-to-ytR"/>
                                         </constraints>
                                     </view>
+                                    <view tag="998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1XY-av-F4k">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="157"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="157" id="xrd-aP-jYg"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Iqn-Ev-D63" appends="YES" id="ihg-pb-Uqg"/>
+                                        </connections>
+                                    </view>
+                                    <view tag="999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ibi-tS-z8e">
+                                        <rect key="frame" x="0.0" y="142" width="320" height="158"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="158" id="oQU-dY-ame"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Hm4-WJ-SNM" appends="YES" id="69m-yB-FkX"/>
+                                        </connections>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ibi-tS-z8e" secondAttribute="bottom" id="3qu-oY-dc1"/>
                                     <constraint firstAttribute="trailing" secondItem="G4X-xw-xAl" secondAttribute="trailing" id="4eh-tn-kSf"/>
                                     <constraint firstItem="Wyo-tk-JbR" firstAttribute="top" secondItem="ePg-dk-slQ" secondAttribute="top" id="8Rt-J8-gsZ"/>
+                                    <constraint firstItem="1XY-av-F4k" firstAttribute="leading" secondItem="ePg-dk-slQ" secondAttribute="leading" id="FIA-ON-m0L"/>
                                     <constraint firstAttribute="trailing" secondItem="Wyo-tk-JbR" secondAttribute="trailing" id="Meb-9n-MCt"/>
-                                    <constraint firstAttribute="height" constant="200" id="PRH-47-fkS"/>
+                                    <constraint firstAttribute="height" constant="300" id="PRH-47-fkS"/>
+                                    <constraint firstAttribute="trailing" secondItem="1XY-av-F4k" secondAttribute="trailing" id="Pyw-FE-BYV"/>
                                     <constraint firstItem="Wyo-tk-JbR" firstAttribute="leading" secondItem="ePg-dk-slQ" secondAttribute="leading" id="XyP-sw-WKb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ibi-tS-z8e" secondAttribute="trailing" id="bke-hx-rUf"/>
+                                    <constraint firstItem="1XY-av-F4k" firstAttribute="top" secondItem="ePg-dk-slQ" secondAttribute="top" id="el5-Ko-LwV"/>
                                     <constraint firstAttribute="centerY" secondItem="uvz-hk-Nr4" secondAttribute="centerY" id="if5-2n-2ws"/>
                                     <constraint firstAttribute="bottom" secondItem="G4X-xw-xAl" secondAttribute="bottom" id="jM5-Ee-UoQ"/>
                                     <constraint firstItem="G4X-xw-xAl" firstAttribute="leading" secondItem="ePg-dk-slQ" secondAttribute="leading" id="lQV-GX-C2M"/>
+                                    <constraint firstItem="Ibi-tS-z8e" firstAttribute="leading" secondItem="ePg-dk-slQ" secondAttribute="leading" id="nHE-Hh-AFj"/>
                                     <constraint firstAttribute="centerX" secondItem="uvz-hk-Nr4" secondAttribute="centerX" id="wWx-ZR-hlV"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="68Y-ha-WTV" appends="YES" id="ofC-qZ-bdB"/>
-                                </connections>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="412" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMm-bX-oUk">
-                                <rect key="frame" x="0.0" y="384" width="320" height="184"/>
+                                <rect key="frame" x="0.0" y="434" width="320" height="134"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
@@ -1709,7 +1763,8 @@ Cgo
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cly-dd-Cif" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="68Y-ha-WTV"/>
+                <tapGestureRecognizer id="Iqn-Ev-D63"/>
+                <tapGestureRecognizer id="Hm4-WJ-SNM"/>
             </objects>
             <point key="canvasLocation" x="1949" y="671"/>
         </scene>

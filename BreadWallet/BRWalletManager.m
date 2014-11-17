@@ -56,7 +56,7 @@
 #define SEED_ENTROPY_LENGTH     (128/8)
 #define SEC_ATTR_SERVICE        @"org.voisine.breadwallet"
 #define DEFAULT_CURRENCY_PRICE  500.0
-#define DEFAULT_CURRENCY_CODE   @"USD"
+#define DEFAULT_CURRENCY_CODE   @"EUR"
 
 #define BASE_URL    @"https://blockchain.info"
 #define UNSPENT_URL BASE_URL "/unspent?active="

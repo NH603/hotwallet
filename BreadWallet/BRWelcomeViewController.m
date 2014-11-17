@@ -135,6 +135,8 @@
     [self.generateButton addTarget:self action:@selector(generate:) forControlEvents:UIControlEventTouchUpInside];
     self.showButton = (id)[[segue.destinationViewController view] viewWithTag:3];
     [self.showButton addTarget:self action:@selector(show:) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.showButton.layer.cornerRadius = 5.0;
 }
 
 - (void)animateWallpaper

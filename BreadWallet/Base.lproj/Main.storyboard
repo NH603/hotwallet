@@ -1782,7 +1782,7 @@ Cgo
                                                 <rect key="frame" x="127" y="258" width="50" height="50"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WARNING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="boW-3A-lc2">
-                                                <rect key="frame" x="-8" y="0.0" width="304" height="63"/>
+                                                <rect key="frame" x="-8" y="-4" width="304" height="63"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="48"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1800,7 +1800,7 @@ Cgo
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DO NOT type your backup phrase into password managers or elsewhere. Other devices may be infected." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" preferredMaxLayoutWidth="264" translatesAutoresizingMaskIntoConstraints="NO" id="hZ6-ye-ikW">
-                                                <rect key="frame" x="20" y="302" width="264" height="83"/>
+                                                <rect key="frame" x="20" y="293" width="264" height="83"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1813,16 +1813,21 @@ Cgo
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="S84-6b-61l" secondAttribute="centerX" id="7dR-Ul-3rB"/>
                                     <constraint firstItem="S84-6b-61l" firstAttribute="top" secondItem="aNW-we-FTJ" secondAttribute="top" constant="62" id="gaP-ob-w5e"/>
                                 </constraints>
                             </view>
                             <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efL-Cj-Aho">
-                                <rect key="frame" x="204" y="510" width="116" height="58"/>
+                                <rect key="frame" x="212" y="520" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.1450980392" green="0.42352941179999998" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="VMc-8M-fj0"/>
+                                    <constraint firstAttribute="height" constant="40" id="jzu-GJ-Hwa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <inset key="contentEdgeInsets" minX="60" minY="20" maxX="20" maxY="20"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="show">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1832,14 +1837,14 @@ Cgo
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zSf-HG-qwr" firstAttribute="top" secondItem="efL-Cj-Aho" secondAttribute="bottom" id="85y-OA-T7Y"/>
                             <constraint firstItem="aNW-we-FTJ" firstAttribute="top" secondItem="ttV-Ha-QVS" secondAttribute="topMargin" id="CPo-wU-T0i"/>
+                            <constraint firstItem="zSf-HG-qwr" firstAttribute="top" secondItem="efL-Cj-Aho" secondAttribute="bottom" constant="8" id="LJ5-3y-q7h"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aNW-we-FTJ" secondAttribute="trailing" constant="-16" id="M8f-kB-3yH"/>
                             <constraint firstAttribute="centerX" secondItem="Hnv-2O-Gsw" secondAttribute="centerX" constant="1" id="MIp-gC-cqL"/>
                             <constraint firstItem="aNW-we-FTJ" firstAttribute="leading" secondItem="ttV-Ha-QVS" secondAttribute="leadingMargin" constant="-16" id="QuZ-MM-BZ9"/>
                             <constraint firstItem="zSf-HG-qwr" firstAttribute="top" secondItem="aNW-we-FTJ" secondAttribute="bottom" id="Wgq-Nc-Dxw"/>
+                            <constraint firstItem="efL-Cj-Aho" firstAttribute="trailing" secondItem="ttV-Ha-QVS" secondAttribute="trailingMargin" constant="8" id="dWi-N5-Lkg"/>
                             <constraint firstAttribute="centerY" secondItem="Hnv-2O-Gsw" secondAttribute="centerY" constant="125.5" id="eCO-I3-MO8"/>
-                            <constraint firstAttribute="trailing" secondItem="efL-Cj-Aho" secondAttribute="trailing" id="ffZ-DN-LfC"/>
                             <constraint firstAttribute="centerX" secondItem="PwF-x9-r0S" secondAttribute="centerX" constant="1" id="l5R-g6-8Bh"/>
                             <constraint firstAttribute="centerY" secondItem="PwF-x9-r0S" secondAttribute="centerY" constant="40" id="mI9-gy-CKl"/>
                             <constraint firstAttribute="centerX" secondItem="A4M-yq-26d" secondAttribute="centerX" constant="1" id="uWk-tD-YFh"/>

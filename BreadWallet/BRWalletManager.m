@@ -61,6 +61,7 @@
 #define BASE_URL    @"https://blockchain.info"
 #define UNSPENT_URL BASE_URL "/unspent?active="
 #define TICKER_URL  BASE_URL "/ticker"
+#define PAYMIUM_TICKER_URL @"https://paymium.com/api/v1/data/eur/ticker"
 
 static BOOL setKeychainData(NSData *data, NSString *key)
 {
@@ -403,8 +404,65 @@ static NSData *getKeychainData(NSString *key)
 {
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(updateExchangeRate) object:nil];
     [self performSelector:@selector(updateExchangeRate) withObject:nil afterDelay:60.0];
-
+    
     if (self.reachability.currentReachabilityStatus == NotReachable) return;
+    
+    NSUserDefaults *defs = [NSUserDefaults standardUserDefaults];
+    _localCurrencyCode = [defs stringForKey:LOCAL_CURRENCY_CODE_KEY];
+    if (! self.localCurrencyCode) _localCurrencyCode = [[NSLocale currentLocale] objectForKey:NSLocaleCurrencyCode];
+    
+    if([_localCurrencyCode isEqualToString: @"EUR"]) {
+        [self updateExchangeRateViaPaymium];
+        [self updateCurrenciesViaBlockchain];
+    } else {
+        [self updateExchangeRateViaBlockchain];
+    }
+}
+
+- (void)updateExchangeRateViaPaymium
+{
+    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:PAYMIUM_TICKER_URL]
+                                         cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:10.0];
+    
+    [NSURLConnection sendAsynchronousRequest:req queue:[NSOperationQueue currentQueue]
+    completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        if (connectionError) {
+            NSLog(@"%@", connectionError);
+            return;
+        }
+        
+        NSUserDefaults *defs = [NSUserDefaults standardUserDefaults];
+        NSError *error = nil;
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+        
+        if (error || ! [json isKindOfClass:[NSDictionary class]] ||
+            ! [json[@"price"] isKindOfClass:[NSNumber class]]) {
+            NSLog(@"unexpected response from %@:\n%@", req.URL.host,
+                  [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+            return;
+        }
+        
+        self.localFormat.currencySymbol = @"€";
+        self.localFormat.currencyCode = self.localCurrencyCode;
+
+        _localCurrencyPrice = [json[@"price"] doubleValue];
+        self.localFormat.maximum = @((MAX_MONEY/SATOSHIS)*self.localCurrencyPrice);
+
+        [defs setObject:@(self.localCurrencyPrice) forKey:LOCAL_CURRENCY_PRICE_KEY];
+        [defs synchronize];
+        NSLog(@"exchange rate updated to %@/%@ (Paymium)", [self localCurrencyStringForAmount:SATOSHIS],
+              [self stringForAmount:SATOSHIS]);
+
+        if (! self.wallet) return;
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[NSNotificationCenter defaultCenter] postNotificationName:BRWalletBalanceChangedNotification object:nil];
+        });
+    }];
+}
+
+- (void)updateExchangeRateViaBlockchain
+{
 
     NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:TICKER_URL]
                          cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:10.0];
@@ -459,7 +517,7 @@ static NSData *getKeychainData(NSString *key)
         [defs setObject:@(self.localCurrencyPrice) forKey:LOCAL_CURRENCY_PRICE_KEY];
         [defs setObject:self.currencyCodes forKey:CURRENCY_CODES_KEY];
         [defs synchronize];
-        NSLog(@"exchange rate updated to %@/%@", [self localCurrencyStringForAmount:SATOSHIS],
+        NSLog(@"exchange rate updated to %@/%@ (Blockchain)", [self localCurrencyStringForAmount:SATOSHIS],
               [self stringForAmount:SATOSHIS]);
 
         if (! self.wallet) return;
@@ -468,6 +526,36 @@ static NSData *getKeychainData(NSString *key)
             [[NSNotificationCenter defaultCenter] postNotificationName:BRWalletBalanceChangedNotification object:nil];
         });
     }];
+}
+
+- (void)updateCurrenciesViaBlockchain
+{
+
+    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:TICKER_URL]
+                         cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:10.0];
+
+    [NSURLConnection sendAsynchronousRequest:req queue:[NSOperationQueue currentQueue]
+    completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        if (connectionError) {
+            NSLog(@"%@", connectionError);
+            return;
+        }
+
+        NSUserDefaults *defs = [NSUserDefaults standardUserDefaults];
+        NSError *error = nil;
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+
+        if (error || ! [json isKindOfClass:[NSDictionary class]]) {
+            NSLog(@"unexpected response from %@:\n%@", req.URL.host,
+                  [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+            return;
+        }
+
+        _currencyCodes = [NSArray arrayWithArray:json.allKeys];
+        [defs setObject:self.currencyCodes forKey:CURRENCY_CODES_KEY];
+        
+        NSLog(@"currency codes updated (Blockchain)");
+     }];
 }
 
 // given a private key, queries blockchain for unspent outputs and calls the completion block with a signed transaction
